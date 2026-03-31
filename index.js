@@ -64,7 +64,22 @@ app.post("/webhook", async (req, res) => {
         await replyMessage(event.replyToken, [
           {
             type: "text",
-            text: "歡迎新成員加入！🎉"
+            text: `歡迎加入 FORTY BEAR 群組 🐻
+
+                    新朋友、老朋友都歡迎！
+                    群組已來本可以留言自己的 IP，
+                    方便大家配對一起玩。
+
+                    之後如果有聚會或活動，
+                    會看大家的人數來調整內容，
+                    目前還不確定會辦什麼，
+                    但應該都是 輕鬆好玩的路線 🤡🤡🤡
+
+                    想聊天、開聊、
+                    路過丟一句都沒問題～
+
+                    團長 洲洲 3/31
+                    BY FORTY BEAR 機器熊奴`
           }
         ]);
       }
