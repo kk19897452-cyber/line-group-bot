@@ -34,7 +34,7 @@ async function replyMessage(replyToken, messages) {
     {
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${process.env.LINE_CHANNEL_ACCESS_TOKEN}`
+        Authorization: `Bearer ${process.env.LINE_CHANNEL_ACCESS_TOKEN}`
       }
     }
   );
@@ -49,7 +49,7 @@ app.post("/webhook", async (req, res) => {
     const events = req.body.events || [];
 
     for (const event of events) {
-      // 1) Bot 被加入群組 / 多人聊天室
+      // Bot 被加入群組 / 聊天室
       if (event.type === "join") {
         await replyMessage(event.replyToken, [
           {
@@ -59,7 +59,7 @@ app.post("/webhook", async (req, res) => {
         ]);
       }
 
-      // 2) 有新成員加入群組
+      // 有新成員加入群組
       if (event.type === "memberJoined") {
         await replyMessage(event.replyToken, [
           {
@@ -68,6 +68,8 @@ app.post("/webhook", async (req, res) => {
           }
         ]);
       }
+
+      // message 事件不處理 = 不會每句都回
     }
 
     res.sendStatus(200);
