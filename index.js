@@ -65,7 +65,6 @@ app.post("/webhook", async (req, res) => {
           {
             type: "text",
             text: `歡迎加入 FORTY BEAR 群組 🐻
-
 新朋友、老朋友都歡迎！😇😇😇
 群組記事本可以留言自己的 IP，🫶🫶🫶
 方便大家配對一起玩。🐾
