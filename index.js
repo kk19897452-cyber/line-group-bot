@@ -120,7 +120,7 @@ app.post("/webhook", async (req, res) => {
             setTimeout(async () => {
               try {
                 await pushMessage(targetId, [
-                  { type: "text", text: "愚人節快樂 🤡" }
+                  { type: "text", text: "沒啦\n騙你的\n愚人節快樂 🤡" }
                 ]);
               } catch (err) {
                 console.log("Push failed:", err.message);
