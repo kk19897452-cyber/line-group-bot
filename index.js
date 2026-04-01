@@ -86,3 +86,9 @@ app.get("/", (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
+setInterval(() => {
+  fetch("https://line-group-bot-we69.onrender.com")
+    .then(() => console.log("self ping"))
+    .catch(() => console.log("ping fail"));
+}, 500000); // 8分鐘
