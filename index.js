@@ -195,7 +195,7 @@ app.post("/webhook", async (req, res) => {
           await replyMessage(event.replyToken, [
             {
               type: "text",
-              text: text: `歡迎加入 FORTY BEAR 群組 🐻\n\n新朋友、老朋友都歡迎！😇😇😇\n群組記事本可以留言自己的 IP，🫶🫶🫶\n方便大家配對一起玩。🐾\n\n之後如果有聚會或活動，🐗🐻🐻‍❄️🐼\n會看大家的人數來調整內容，\n目前還不確定會辦什麼，🐾🐾🐾\n但應該都是 輕鬆好玩的路線 🤡🤡🤡\n\n想聊天、開聊、\n路過丟一句都沒問題～🐗🐻🐻‍❄️🐼\n\n團長 淵淵 3/31🎆\n\nBY FORTY BEAR 機器熊奴`
+              text: `歡迎加入 FORTY BEAR 群組 🐻\n\n新朋友、老朋友都歡迎！😇😇😇\n群組記事本可以留言自己的 IP，🫶🫶🫶\n方便大家配對一起玩。🐾\n\n之後如果有聚會或活動，🐗🐻🐻‍❄️🐼\n會看大家的人數來調整內容，\n目前還不確定會辦什麼，🐾🐾🐾\n但應該都是 輕鬆好玩的路線 🤡🤡🤡\n\n想聊天、開聊、\n路過丟一句都沒問題～🐗🐻🐻‍❄️🐼\n\n團長 淵淵 3/31🎆\n\nBY FORTY BEAR 機器熊奴`
             }
           ]);
           continue;
